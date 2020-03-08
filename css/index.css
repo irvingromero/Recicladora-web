@@ -26,8 +26,9 @@ body{
     color: black;
 }
 
-#mapa{
+#map{
     width: 98%;
     height: 550px;
-    margin-left: 15px;
+    margin-left: 13px;
+    border: solid 1px black;
 }
