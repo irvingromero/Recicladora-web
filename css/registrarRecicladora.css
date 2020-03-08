@@ -6,6 +6,30 @@ body {
     font-family: sans-serif;
     height: 100vh;
   }
+
+  .topnav {
+    margin-top: 15px;
+    margin-left: 10px;
+    margin-right: 9px;
+    overflow: hidden;
+    background-color: limegreen;
+    border-radius: 40px;
+  }
+  
+  .topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Change color on hover */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
   
   .login-box {
     width: 420px;
@@ -95,4 +119,12 @@ body {
     cursor: pointer;
     background: #ffc107;
     color: #000;
+  }
+
+  #btnAtras_regisrarRecicladora{
+    width: 45px;
+    height: 45px;
+    border-radius: 30px;
+    position: fixed;
+    margin: -50px;
   }

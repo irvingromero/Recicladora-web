@@ -6,6 +6,30 @@ body {
   font-family: sans-serif;
   height: 100vh;
 }
+
+.topnav {
+  margin-top: 15px;
+  margin-left: 10px;
+  margin-right: 9px;
+  overflow: hidden;
+  background-color: limegreen;
+  border-radius: 40px;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
   
 .login-box {
   width: 420px;
@@ -15,7 +39,7 @@ body {
   top: 50%;
   left: 50%;
   position: absolute;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -45%);
   box-sizing: border-box;
   padding: 70px 30px;
   border-radius: 40px;
@@ -23,16 +47,8 @@ body {
   
 .login-box h1 {
   margin: 0;
-  padding: 0 0 20px;
   text-align: center;
   font-size: 22px;
-}
-  
-.login-box label {
-  margin: 0;
-  padding: 0;
-  font-weight: bold;
-  display: block;
 }
 
 .login-box input {
