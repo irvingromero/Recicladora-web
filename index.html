@@ -5,86 +5,20 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Datos Alumno</title>
+    <title>Recicladoras online</title>
 </head>
 <body>
-    <br>
-
-    <div>
-        <img src="./img/irv.png" width="230px" height="270px" style="float: right;">
-    </div>
-
-    <table style="width: 82%;" cellpadding="5">
-        <tr style="background-color: limegreen;"><td><b>Datos generales</b></td></tr>
-        <tr>
-            <td><b>Nombre:</b> Irving</td> 
-        </tr>
-        <tr>
-            <td><b>Apellido paterno:</b> Romero</td> 
-        </tr>
-        <tr>
-            <td><b>Apellido materno:</b> Gonzalez</td>
-        </tr>
-        <tr>
-            <td><b>Fecha de nacimiento:</b> 17/nov/93</td>
-        </tr>
-        <tr>
-            <td><b>Lugar de nacimento:</b> Mexicali B.C</td>
-        </tr>
-        <tr>
-            <td><b>Sexo:</b> Masculino</td>
-        </tr>
-    </table>
-
-    <br>
-    <br>
-
-    <table style="width: 82%;" cellpadding = "5">
-        <tr>
-            <th colspan = 2 style="background-color: limegreen;">Informacion escolar</th>
-        </tr>
-        <tr>
-            <td><b>Numero de control:</b> 14490873</td>
-            <td><b>Carrera:</b> Ing. Sistemas Computacionales</td> 
-        </tr>
-        <tr>
-            <td><b>Semestre:</b> 12</td>
-        </tr>
-    </table>
-
-    <br>
-    <br>
-
-    <table style="width: 100%;" cellpadding = "5">
-        <tr>
-            <th colspan = 2 style="background-color: limegreen;">Informacion de contacto</th>
-        </tr>
-        <tr>
-            <td><b>Calle:</b> San quintin</td>
-            <td><b>Colonia:</b> Aztecas</td> 
-        </tr>
-        <tr>
-            <td><b>Codigo postal:</b> 21137</td>
-            <td><b>Municipio:</b> Mexicali</td>
-        </tr>
-        <tr>
-            <td><b>Correo:</b> a14490873@itmexicali.edu.mx</td>
-            <td><b>Telefono:</b> 6862891077</td>
-        </tr>
-    </table>
-
-    <div class="enlace">
-        <a href="https://github.com/irvingromero/programacionweb"target="_blank"><h3>Codigo fuente de la pagina</h3></a>
-    </div>
-
-    <div  class="video">
-        <p><b>Caifanes 2017</b></p>
-        <video height="100%" width="400px" controls>
-            <source src="./vid/video.mp4" type="video/mp4">
-        </video>
+    <div class="topnav">
+        <a href="iniciarSesion.html"><b>Iniciar sesion</b></a>
+        <a href="#" style="float:right"><b>Buscar material</b></a>
     </div>
 
     <br>
-    <marquee><p>Iving Romero Gonzalez</p></marquee>
+
+    <div id="mapa"></div>
+    <script src = "./Js/logica.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBrStfw9Tz0K1VYL-83JjLr3CvBpe05Twk&callback=iniciarMapa"
+        type="text/javascript">
+    </script>
 </body>
 </html>
