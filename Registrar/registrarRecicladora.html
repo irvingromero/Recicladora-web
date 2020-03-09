@@ -24,18 +24,18 @@
         <h1>Ingresa tus datos</h1>
         <form>
           <label for="username">Nombre de usuario:</label>
-          <input type="text" placeholder="Ingresa usuario">
+          <input id="campoUsuario_registrarRecicladora" type="text" placeholder="Ingresa usuario" onkeypress="return caracteresEspeciales(event)" maxlength="50">
 
           <label for="username">Nombre recicladora:</label>
-          <input type="text" placeholder="Nombre de la recicladora">
+          <input id="campoNombre_registrarRecicladora" type="text" placeholder="Nombre de la recicladora">
 
           <label for="username">Contraseña:</label>
-          <input type="text" placeholder="Contraseña">
+          <input id="campoContra_registrarRecicladora" type="password" placeholder="Contraseña">
 
           <label for="username">Confirma contraseña:</label>
-          <input type="text" placeholder="Repite contraseña">
+          <input id="campoConfirmContra_registrarRecicladora" type="password" placeholder="Repite contraseña">
           
-          <button type = "button" onclick = "regresar()">Registrar</button>
+          <button type = "button" onclick = "validar()">Registrar</button>
         </form>
     </div>
 </body>
