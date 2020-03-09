@@ -22,20 +22,21 @@
         <button id = "btnAtras_regisrarRecicladora" type="button" onclick = "regresar();"><</button>
 
         <h1>Ingresa tus datos</h1>
-        <form>
+
+        <form action="registrarRecicladora.php" method="POST" onsubmit="return validar()">
           <label for="username">Nombre de usuario:</label>
-          <input id="campoUsuario_registrarRecicladora" type="text" placeholder="Ingresa usuario" onkeypress="return caracteresEspeciales(event)" maxlength="50">
+          <input id="campoUsuario_registrarRecicladora" name="usuario" type="text" placeholder="Ingresa usuario" onkeypress="return caracteresEspeciales(event)" maxlength="50">
 
           <label for="username">Nombre recicladora:</label>
-          <input id="campoNombre_registrarRecicladora" type="text" placeholder="Nombre de la recicladora">
+          <input id="campoNombre_registrarRecicladora" name="nombre" type="text" placeholder="Nombre de la recicladora">
 
           <label for="username">Contraseña:</label>
-          <input id="campoContra_registrarRecicladora" type="password" placeholder="Contraseña">
+          <input id="campoContra_registrarRecicladora" name="contra" type="password" placeholder="Contraseña">
 
           <label for="username">Confirma contraseña:</label>
           <input id="campoConfirmContra_registrarRecicladora" type="password" placeholder="Repite contraseña">
           
-          <button type = "button" onclick = "validar()">Registrar</button>
+          <input type="submit" value="Registrar">
         </form>
     </div>
 </body>

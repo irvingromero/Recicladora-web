@@ -22,18 +22,19 @@
         <button id="btnAtras" type="button" onclick="regresar();"><</button>
 
         <h1>Ingresa tus datos</h1>
-        <form action="" method="GET">
+
+        <form action="/registrarUsuario/registrarUsuario.php" method="POST" onsubmit="return validar()">
           <!-- USERNAME INPUT -->
           <label for="username">Nombre de usuario:</label>
-          <input id = "campoUsuario_registroUsuario" type="text" placeholder="Ingresa usuario" onkeypress="return caracteresEspeciales(event)" maxlength="50">
+          <input id = "campoUsuario_registroUsuario" name="usuario" type="text" placeholder="Ingresa usuario" onkeypress="return caracteresEspeciales(event)" maxlength="50">
 
           <label for="username">Contraseña:</label>
-          <input id = "campoContra_registroUsuario" type="password" placeholder="Contraseña" required>
+          <input id = "campoContra_registroUsuario" name="contra" type="password" placeholder="Contraseña">
 
           <label for="username">Confirma contraseña:</label>
-          <input id="confirmaContra_registroUsuario" type="password" placeholder="Repite contraseña" required>
-          
-          <button type = "button" onclick = "validar()"><Registrar>Registrar</button>
+          <input id="confirmaContra_registroUsuario" type="password" placeholder="Repite contraseña">
+
+          <input type="submit" value="Registrar">
         </form>
     </div>
 </body>

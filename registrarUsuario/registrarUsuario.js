@@ -20,12 +20,13 @@ function validar(){
         campoConfirmContra.value.length > 2){
         
         alert("Usuario registrado exitosamente!");
-        regresar();
+        return true;
     } else {
         campoUsuario.style.borderColor = "red"
         campoContra.style.borderColor = "red"
         campoConfirmContra.style.borderColor = "red"
         alert("Debes completar todos los datos con minimo 3 carácteres");
+        return false;
     }
 }
 
