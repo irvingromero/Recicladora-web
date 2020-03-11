@@ -18,9 +18,14 @@ function validar(){
     if(campoUsuario.value.length > 2 &&
         campoContra.value.length > 2 &&
         campoConfirmContra.value.length > 2){
-        
-        alert("Usuario registrado exitosamente!");
-        return true;
+
+        if(campoContra.value == campoConfirmContra.value){
+            alert("Usuario registrado exitosamente!");
+            return true;
+        } else {
+            alert("Las contraseñas no coinciden");
+            return false;
+        }
     } else {
         campoUsuario.style.borderColor = "red"
         campoContra.style.borderColor = "red"

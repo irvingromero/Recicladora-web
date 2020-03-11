@@ -21,8 +21,13 @@ function validar(){
         campoContra.value.length > 2 &&
         campoConfirmContra.value.length > 2){
         
-        alert("Recicladora registrada exitosamente!");
+        if(campoContra.value == campoConfirmContra.value){
+            alert("Recicladora registrada exitosamente!");
         return true;
+        } else {
+            alert("Las contraseñas no coinciden");
+            return false;
+        }
     } else {
         campoUsuario.style.borderColor = "red"
         campoNombre.style.borderColor = "red"
