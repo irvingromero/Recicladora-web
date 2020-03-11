@@ -14,16 +14,24 @@
         <a href="../index.html"><b>Inicio</b></a>
         <a ><b>|</b></a>
         
-        <a ><b><u>Iniciar Sesion</u></b></a>
+        <a href="../iniciarSesion/iniciarSesion.html"><b>Iniciar Sesion</b></a>
         <a ><b>|</b></a>
-      </div>
-      
-    <div class="login-box">
-        <button id="btnAtras" type="button" onclick="regresar();"><</button>
 
+        <div class="dropdown">
+          <button class="dropbtn"><b><u>Registrarse</u></b>
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a><u>Usuario</u></a>
+            <a href="../registrarRecicladora/registrarRecicladora.html">Recicladora</a>
+          </div>
+        </div>
+    </div>
+
+    <div class="login-box">
         <h1>Ingresa tus datos</h1>
 
-        <form action="/registrarUsuario/registrarUsuario.php" method="POST" onsubmit="return validar()">
+        <form action="registrarUsuario.php" method="POST" onsubmit="return validar()">
           <!-- USERNAME INPUT -->
           <label for="username">Nombre de usuario:</label>
           <input id = "campoUsuario_registroUsuario" name="usuario" type="text" placeholder="Ingresa usuario" onkeypress="return caracteresEspeciales(event)" maxlength="50">

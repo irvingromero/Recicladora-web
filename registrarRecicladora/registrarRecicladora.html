@@ -14,13 +14,21 @@
         <a href="../index.html"><b>Inicio</b></a>
         <a ><b>|</b></a>
         
-        <a ><b><u>Iniciar Sesion</u></b></a>
+        <a href="../iniciarSesion/iniciarSesion.html"><b>Iniciar Sesion</b></a>
         <a ><b>|</b></a>
-      </div>
+
+        <div class="dropdown">
+          <button class="dropbtn"><b><u>Registrarse</u></b>
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="../registrarUsuario/registroUsuario.html">Usuario</a>
+            <a><u>Recicladora</u></a>
+          </div>
+        </div>
+    </div>
 
     <div class="login-box">
-        <button id = "btnAtras_regisrarRecicladora" type="button" onclick = "regresar();"><</button>
-
         <h1>Ingresa tus datos</h1>
 
         <form action="registrarRecicladora.php" method="POST" onsubmit="return validar()">

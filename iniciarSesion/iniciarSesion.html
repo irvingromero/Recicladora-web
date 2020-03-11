@@ -17,28 +17,32 @@
 
       <a ><b><u>Iniciar Sesion</u></b></a>
       <a ><b>|</b></a>
+
+      <div class="dropdown">
+        <button class="dropbtn"><b>Registrarse</b> 
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="../registrarUsuario/registroUsuario.html">Usuario</a>
+          <a href="../registrarRecicladora/registrarRecicladora.html">Recicladora</a>
+        </div>
+      </div>
     </div>
 
     <!-- FORMULARIO DE INICIAR SESION -->
     <div class="login-box">
         <h1>Iniciar sesion</h1>
 
-        <form action="" name = "camposIniciarSesion" method="POST">
+        <form action = "iniciarSesion.php" method="POST">
           <label for="username">Usuario:</label>
-          <input id="campoUsuario_iniciarSesion" type="text" placeholder="Ingresa usuario" required>
+          <input id="campoUsuario_iniciarSesion" name="usuario" type="text" placeholder="Ingresa usuario" required>
           
           <label for="password">Contraseña: </label>
-          <input id="campoContra_iniciarSesion" type="password" placeholder="Ingresa contraseña" required>
+          <input id="campoContra_iniciarSesion" name="contra" type="password" placeholder="Ingresa contraseña" required>
 
           <input type="submit" value="Entrar">
 
-          <a href="#">Recuperar contraseña</a><br>
-          <p style="text-align: center;">¿No tienes cuenta? Registrate!</p>
-          
-          <div>
-            <button type = "button" onclick = "location.href = '../registrarUsuario/registroUsuario.html'">Usuario</button><br>
-            <button type = "button" onclick = "location.href = '../registrarRecicladora/registrarRecicladora.html'">Recicladora</button>
-          </div>
+          <a href="#">Recuperar contraseña</a>
         </form>
     </div>
 </body>
