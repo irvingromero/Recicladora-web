@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="./modificarDatos.css">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ReciclApp</title>
+    <link rel="shortcut icon" href="../../img/favicon.png">
+</head>
+<body>
+    <div class="topnav">
+        <a href="../sesionUsuario.html"><b>Inicio</b></a>
+        <a><b>|</b></a>
+        
+        <a><b><u>Modificar datos</u></b></a>
+        <a><b>|</b></a>
+        
+        <a href="../../iniciarSesion/iniciarSesion.html" style="float:right"><b>Cerrar sesion</b></a>
+    </div>
+
+    <div class="login-box">
+        <h1>Editar tus datos</h1>
+
+        <form action="" method="POST" onsubmit="">
+          <label for="username">Nombre de usuario:</label>
+          <input id = "campoUsuario_modificarDatos" type="text" placeholder="Usuario" disabled>
+
+          <label for="username">Nueva contraseña:</label>
+          <input id = "campoContra_modificarDatos" name="contra" type="password" placeholder="Contraseña">
+
+          <label for="username">Confirma contraseña:</label>
+          <input id="confirmaContra_modificarDatos" type="password" placeholder="Repite contraseña">
+
+          <input type="submit" value="Actualizar">
+        </form>
+    </div>
+</body>
+</html>

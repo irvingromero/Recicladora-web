@@ -1,12 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" type="text/css" href="../css/sesionUsuario.css">
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ReciclApp</title>
     <link rel="shortcut icon" href="../img/favicon.png">
 </head>
 <body>
-    <h1>usuario</h1>
+    <div class="topnav">
+        <a ><b><u>Inicio</u></b></a>
+        <a ><b>|</b></a>
+        
+        <a href="./ModificarDatos/modificarDatos.html"><b>Modificar datos</b></a>
+        <a ><b>|</b></a>
+
+        <a href="#"><b>Buscar material</b></a>
+        <a ><b>|</b></a>
+        
+        <a href="../iniciarSesion/iniciarSesion.html" style="float:right"><b>Cerrar sesion</b></a>
+    </div>
+
+    <div id="map"></div>
+    <script src = "sesionUsuario.js"></script>
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCzlHZNXW4tufLnsg1gWuSINttNhxr9qU0&callback=initMap">
+    </script>
 </body>
 </html>
